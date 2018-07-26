@@ -1,9 +1,9 @@
 export class Flight 
 {
-    number?: number;
-    pointOfDeparture?: string;
-    timeOfDeparture?: string;
-    destination?: string;
-    arrivalTime?: string;
-    ticketId?: number;
+    number: number;
+    pointOfDeparture: string;
+    timeOfDeparture: Date;
+    destination: string;
+    arrivalTime: number;
+    ticketId: number;
 }

@@ -22,7 +22,10 @@ export class FlightDetailsComponent implements OnInit {
     {
       console.log('С парамс все ок');
     }
-    this.flightService.getFlightById(this.currentRoute.snapshot.params['id']).subscribe((data: Flight) => this.flight = data);
+    this.flightService.getFlightById(this.currentRoute.snapshot.params['id']).subscribe(
+      (data: Flight) => {
+        this.flight = data;
+      });
   }
 
   editFlight(flight: Flight)
