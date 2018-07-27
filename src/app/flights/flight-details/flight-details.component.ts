@@ -28,7 +28,7 @@ export class FlightDetailsComponent implements OnInit {
       });
   }
 
-  editFlight(flight: Flight)
+  public editFlight(flight: Flight)
   {
     this.flightService.updateFlight(flight).subscribe((data: Flight) => this.flight = data);
   }

@@ -2,7 +2,7 @@ export class Flight
 {
     number: number;
     pointOfDeparture: string;
-    timeOfDeparture: Date;
+    timeOfDeparture: string;
     destination: string;
     arrivalTime: number;
     ticketId: number;

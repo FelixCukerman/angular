@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<div class="container">
+    <div class="row">
+        <table class = "col-md-10">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>flightNumber</th>
+                    <th>timeOfDeparture</th>
+                    <th>crewId</th>
+                    <th>planeId</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let a of departures"> 
+                    <td>{{ a.id }}</td>
+                    <td>{{ a.flightNumber }}</td>
+                    <td>{{ a.timeOfDeparture}}</td>
+                    <td>{{ a.crewId }}</td>
+                    <td>{{ a.planeId }}</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary"(click)="editDeparture(a)">Detail</button>
+                        <button class = "btn btn-sm btn-danger" (click)="delete(a.id)">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
