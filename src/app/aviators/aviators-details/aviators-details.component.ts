@@ -28,7 +28,7 @@ export class AviatorsDetailsComponent implements OnInit
       });
   }
 
-  public editFlight(aviator: Aviator)
+  public editAviator(aviator: Aviator)
   {
     this.flightService.updateAviator(aviator).subscribe((data: Aviator) => this.aviator = data);
   }

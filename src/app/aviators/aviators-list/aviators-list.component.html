@@ -1,29 +1,21 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<div class="container">
-    <div class="row">
-        <table class = "col-md-10">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Date if birthdate</th>
-                    <th>Experience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let a of aviators"> 
-                    <td>{{ a.id }}</td>
-                    <td>{{ a.name }}</td>
-                    <td>{{ a.surname}}</td>
-                    <td>{{ a.dateOfBirthday }}</td>
-                    <td>{{ a.experience }}</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary"(click)="editAviator(a)">Detail</button>
-                        <button class = "btn btn-sm btn-danger" (click)="delete(a.id)">Remove</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<div *ngFor="let a of aviators">
+                <div class="bulletsBlock" (click) = "editAviator(a)">
+                                <div class="bullet-item">
+                                        <img src = "https://www.factroom.ru/wp-content/uploads/2017/08/pilot-730x730.png" style="width: 60%"/>
+                        
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                        <p style="text-align: left; margin-left: 20%">Id: {{ a.id }}</p>
+                                        <p style="text-align: left; margin-left: 20%">Name: {{ a.name }}</p>
+                                        <p style="text-align: left; margin-left: 20%">Surname: {{ a.surname}}</p>
+                                        <p style="text-align: left; margin-left: 20%">Birthdate: {{ a.dateOfBirthday }}</p>
+                                        <p style="text-align: left; margin-left: 20%">Experience: {{ a.experience }}</p>
+                                </div>
+                        </div>
+                        <button class = "btn btn-sm btn-danger" (click)="delete(a.id)" style="width: 60%; margin-left: 18%">Remove</button>
 </div>
