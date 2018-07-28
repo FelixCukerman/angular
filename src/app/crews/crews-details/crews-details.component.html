@@ -1,24 +1,36 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<div class="container">
-    <div class="row">
-        <table class = "col-md-10">
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>aviator</th>
-                    <th>stewardesses</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td>{{ crew.id }}</td>
-                    <td>{{ crew.aviator.surname }}</td>
-                    <td>{{ crew.stewardesses[0].surname}}</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary"(click)="editDeparture(crew)">Detail</button>
-                        <button class = "btn btn-sm btn-danger" (click)="delete(crew.id)">Remove</button>
-                    </td>
-            </tbody>
-        </table>
+<div class="bulletsBlock">
+    <div class="bullet-item">
+        <span class="iconBullet fa fa-cog"></span>
+        <p class="titleBullet">Aviator</p>
+        <p class="hideText">Stewardesses<br></p>
+    </div>
+ 
+    <div class="bullet-item" style="max-width: 400px; margin-bottom: 40px">
+        <img src = "https://www.factroom.ru/wp-content/uploads/2017/08/pilot-730x730.png" style="width: 60%"/>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p style="text-align: left; margin-left: 20%">Id: {{ crew.aviator.id }}</p>
+        <p style="text-align: left; margin-left: 20%">Name: {{ crew.aviator.name }}</p>
+        <p style="text-align: left; margin-left: 20%">Surname: {{ crew.aviator.surname}}</p>
+        <p style="text-align: left; margin-left: 20%">Birthdate: {{ crew.aviator.dateOfBirthday }}</p>
+        <p style="text-align: left; margin-left: 20%">Experience: {{ crew.aviator.experience }}</p>
+    </div>
+ 
+    <div class="bullet-item" style="max-width: 400px">
+        <img src = "https://st2.depositphotos.com/4323461/11214/v/950/depositphotos_112147294-stock-illustration-girl-retro-stewardess-with-white.jpg" style="width: 60%"/>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p style="text-align: left; margin-left: 20%">Id: {{ crew.stewardess[0].id }}</p>
+        <p style="text-align: left; margin-left: 20%">Name: {{ crew.stewardess[0].name }}</p>
+        <p style="text-align: left; margin-left: 20%">Surname: {{ crew.stewardess[0].surname}}</p>
+        <p style="text-align: left; margin-left: 20%">Birthdate: {{ crew.stewardess[0].dateOfBirthday }}</p>
     </div>
 </div>
 

@@ -26,7 +26,7 @@ export class CrewsListComponent implements OnInit
 
   ngOnInit() {}
 
-  editDeparture(crew: Crew)
+  editCrew(crew: Crew)
   {
     this.route.navigateByUrl('crews/' + crew.id);
   }

@@ -28,7 +28,7 @@ export class StewardessesDetailsComponent implements OnInit
       });
   }
 
-  public editCrew(stewardess: Stewardess)
+  public editStewardess(stewardess: Stewardess)
   {
     this.stewardessService.updateStewardess(stewardess).subscribe((data: Stewardess) => this.stewardess = data);
   }

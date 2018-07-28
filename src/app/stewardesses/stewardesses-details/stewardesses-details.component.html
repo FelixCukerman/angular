@@ -1,26 +1,26 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<div class="container">
-    <div class="row">
-        <table class = "col-md-10">
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>surname</th>
-                    <th>date Of Birthday</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td>{{ stewardess.id }}</td>
-                    <td>{{ stewardess.name }}</td>
-                    <td>{{ stewardess.surname}}</td>
-                    <td>{{ stewardess.dateOfBirthday}}</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary"(click)="editDeparture(stewardess)">Detail</button>
-                    </td>
-            </tbody>
-        </table>
-    </div>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<div class="bulletsBlock">
+
+        <div class="bullet-item">
+                <img src = "https://st2.depositphotos.com/4323461/11214/v/950/depositphotos_112147294-stock-illustration-girl-retro-stewardess-with-white.jpg" style="width: 60%"/>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p style="text-align: left; margin-left: 20%">Id: {{ stewardess.id }}</p>
+                <p style="text-align: left; margin-left: 20%">Name: {{ stewardess.name }}</p>
+                <p style="text-align: left; margin-left: 20%">Surname: {{ stewardess.surname}}</p>
+                <p style="text-align: left; margin-left: 20%">Birthdate: {{ stewardess.dateOfBirthday }}</p>
+        </div>
 </div>
+<input type="text" placeholder="Name" [(ngModel)]="stewardess.name" class="form-control" style="width: 23%; float: left; margin-left: 17.9%"/>
+<input type="text" placeholder="Surname" [(ngModel)]="stewardess.surname" class="form-control" style="width: 23%; float: left; margin-left: 1%"/>
+<button class="btn btn-sm btn-warning" (click)="editStewardess(this.stewardess)" style="margin-left: 1%; width: 5%">Edit</button>
+
+<button (click) = "onClick()" style="margin-left: 1%; width: 6%">To list</button>
+<p style="margin-top: 60px;"></p>
 
 <button (click) = "onClick()">To list</button>
