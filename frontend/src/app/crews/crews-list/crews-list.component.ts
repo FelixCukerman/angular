@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Crew } from '../../models/crews';
 import { CrewService } from '../../services/crew.service';
 import { Router } from '@angular/router';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Component({
   selector: 'app-crews-list',
@@ -16,7 +17,33 @@ export class CrewsListComponent implements OnInit
 
   constructor(private crewService: CrewService,  private route: Router) 
   { 
-    crewService.getCrews().subscribe((data: Crew[]) => {
+    crewService.getCrews().subscribe((data: Crew[]) => 
+    {
+      data.forEach(element => {
+        if(element.aviator == null)
+        {
+          let newA =
+          {
+            id: 1,
+            name: 'qwerty',
+            surname: 'ytrewq',
+            dateOfBirthday: new Date(2013, 2, 1, 1, 10),
+            experience: 13
+          };
+          element.aviator = newA;
+        }
+        if(element.stewardesses.length == 0)
+        {
+          let newS =
+          {
+            id: 1,
+            name: 'qwerty',
+            surname: 'ytrewq',
+            dateOfBirthday: new Date(2013, 2, 1, 1, 10)
+          };
+          element.stewardesses[0] = newS;
+        }
+      });
       this.crews = data;
     });
     

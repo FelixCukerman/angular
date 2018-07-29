@@ -10,7 +10,7 @@ import { CrewService } from '../../services/crew.service';
 })
 export class CrewsDetailsComponent implements OnInit 
 {
-  public crew: Crew = new Crew();
+  crew: Crew = new Crew();
 
   constructor(public currentRoute: ActivatedRoute, public crewService: CrewService, public router: Router) 
   { 
