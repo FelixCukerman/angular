@@ -1,0 +1,16 @@
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\HometaskEntity.deps.json
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\HometaskEntity.runtimeconfig.json
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\HometaskEntity.runtimeconfig.dev.json
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\HometaskEntity.dll
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\HometaskEntity.pdb
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\BLL.dll
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\DAL.dll
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\BLL.pdb
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\bin\Debug\netcoreapp2.0\DAL.pdb
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.csprojResolveAssemblyReference.cache
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.csproj.CoreCompileInputs.cache
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.AssemblyInfoInputs.cache
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.AssemblyInfo.cs
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.csproj.CopyComplete
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.dll
+C:\Users\Felix Cukerman\Desktop\server\Hometask7-async-await-\HometaskEntity\obj\Debug\netcoreapp2.0\HometaskEntity.pdb
