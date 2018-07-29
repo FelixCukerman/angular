@@ -1,28 +1,34 @@
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<div class="container">
-    <div class="row">
-        <table class = "col-md-10">
-            <thead>
-                <tr>
-                    <th>id</th>
-                    <th>modelOfplane</th>
-                    <th>countOfSeats</th>
-                    <th>dateOfBirthday</th>
-                    <th>carryingCapacity</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td>{{ typesPlane.id }}</td>
-                    <td>{{ typesPlane.modelOfplane }}</td>
-                    <td>{{ typesPlane.countOfSeats }}</td>
-                    <td>{{ typesPlane.dateOfBirthday}}</td>
-                    <td>{{ typesPlane.carryingCapacity}}</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary"(click)="editTypePlane(typesPlane)">Detail</button>
-                    </td>
-            </tbody>
-        </table>
-    </div>
+
+<div>
+    <img src="http://expressaero.ru/samolety/images/b_747_200_transaero_2.gif" (click)="editTypesPlane(a)"/>
+    <table class = "col-md-10">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>modelOfplane</th>
+                <th>countOfSeats</th>
+                <th>dateOfBirthday</th>
+                <th>carryingCapacity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td>{{ typesPlane.id }}</td>
+                <td>{{ typesPlane.modelOfplane }}</td>
+                <td>{{ typesPlane.countOfSeats}}</td>
+                <td>{{ typesPlane.dateOfBirthday}}</td>
+                <td>{{ typesPlane.carryingCapacity}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <input type="text" placeholder="carryingCapacity" [(ngModel)]="typesPlane.carryingCapacity" class="form-control" style="width: 15%; float: left"/>
+    <input type="text" placeholder="modelOfplane" [(ngModel)]="typesPlane.modelOfplane" class="form-control" style="width: 15%; float: left; margin-left: 1%"/>
+    <input type="text" placeholder="countOfSeats" [(ngModel)]="typesPlane.countOfSeats" class="form-control" style="width: 15%; float: left; margin-left: 1%"/>
+    <button class="btn btn-sm btn-warning" (click)="editTypePlane(this.typesPlane)" style="margin-left: 1%; width: 5%">Edit</button>
 </div>
 
 <button (click) = "onClick()">To list</button>
